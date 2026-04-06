@@ -39,6 +39,8 @@
         <java.version>21</java.version>
         <spring-cloud.version>2023.0.1</spring-cloud.version>
         <github.global.server>github</github.global.server>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
     </properties>
 
     <!--DEPENDENCIES CONFIGURATION-->
@@ -146,7 +148,6 @@
                 <artifactId>site-maven-plugin</artifactId>
                 <version>0.12</version>
                 <configuration>
-                    <server>github</server>
                     <!-- git commit message -->
                     <message>Maven artifacts for ${project.version}</message>
                     <!-- disable webpage processing -->
